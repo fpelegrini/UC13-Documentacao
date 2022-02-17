@@ -1,0 +1,299 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+#Menu{
+    width: 100%;
+    height: 70px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.cabecalho{
+    background-image: linear-gradient(to bottom,orange,white); 
+    display: flex;
+}
+
+.menu ul{
+    list-style: none;
+    position: relative;
+}
+.menu ul li{
+    width: 100px;
+    float: left;
+}
+.menu a{
+    text-decoration: none;
+    padding: 15px;
+    display: block;
+    text-align: center;
+}
+.menu ul li a:hover{
+    background-color: blue;
+    color: white;
+    width: 80%;
+    margin: 0;
+}
+label[for="bt_menu"]{
+    padding: 5px;
+    font-size: 30px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    cursor: pointer;
+    width: 50px;
+    height: 50px;
+}
+#bt_menu{
+    display: none;
+}
+label[for="bt_menu"]{
+    display: none;
+}
+#choppinLogo{
+    display: flex;
+    justify-content: flex-start;
+}
+#choppinLogo img{
+    width: 23%;
+}
+#choppinLogo h1{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: auto 0;
+}
+.labelLogo{
+    display: flex;
+}
+
+@media (max-width:768px){
+    .cabecalho{
+        display: block;
+    }
+    label[for="bt_menu"]{
+        display: block;
+    }
+    #Menu{
+        margin-left: 0;
+        margin-top: -40px;
+        padding: 0;
+        display: none;
+        font-size: 60%;
+    }
+    .menu ul li{
+        width: 20%;
+        height: 20px;
+        float: none;
+    }
+    .menu a{
+        text-align: left;
+    }
+
+/*
+    #bt_menu:checked ~.menu{
+        display:block;
+    } */
+}
+
+.estiloJSON{
+    display: flex;
+    margin: auto;
+    padding: 10px;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+.estiloJSON label{
+    margin:auto 10px;
+}
+
+
+/* Choppin Pedido Features */
+
+/* Home features */
+
+.choppinHomeBotoesPesquisa{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 5%;
+}
+
+.choppinHomeBotoesPesquisa button{
+    border-radius: 10px;
+    background-color: rgb(214, 212, 212);
+    width: 10.0vw;
+    height: auto;
+    padding: 5px;
+    font-weight: bold;
+    font-size: 1.4vw;
+}
+
+.choppinHomeBotoesPesquisa button:focus{
+    background-color: gray;
+    color: aliceblue;
+}
+.choppinHomeEndereco{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+}
+#choppinHomeEnderecoP{
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    font-size: 1.4vw;
+    margin:auto 0;
+    color: black;
+}
+.choppinHomeEndereco button{
+    border-radius: 10px;
+    background-color: rgb(214, 212, 212);
+    width: 5.5vw;
+    height: auto;
+    font-weight:lighter;
+    font-size: 1.3vw;
+    color: black;
+}
+
+.choppinHomePromocoesItens{
+    background-color: white;
+    height: auto;
+    width: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.choppinHomePromocoesItem{
+    display: block;
+    padding: 0 2px;
+    text-align: center;
+}
+.choppinHomePromocoesItem img{
+    margin:auto 5px;
+    width: auto;
+    padding: 0 auto;
+    height:38px;
+}
+.choppinHomePromocoesItem h4{
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    font-weight: bold;
+    text-align: center;
+    font-size: 1.5vw;
+    color: #000;
+}
+.choppinHomePromocoesItem h5{
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    text-align: center;
+    font-size: 1.0vw;
+    color:blue;
+}
+.choppinHomePromocoesItem h6{
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    text-align: center;
+    font-size: 1.0vw;
+    color:red;
+}
+#choppinHomePromocoes h2{
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    font-weight: bold;
+    text-align: center;
+    font-size: 2vw;
+    color: blue;
+}
+
+/* Pedido features */
+#cabecPedido{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 100%;
+    text-align: center;
+    width: 100%;
+    color: blue;
+    background-color: aliceblue;
+}
+.choppinPedidoBotoesPesquisa{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 5%;
+}
+
+.choppinPedidoBotoesPesquisa button{
+    border-radius: 10px;
+    background-color: rgb(214, 212, 212);
+    width: 10.0vw;
+    height: auto;
+    padding: 5px;
+    font-weight: bold;
+    font-size: 1.4vw;
+}
+
+.choppinPedidoBotoesPesquisa button:focus{
+    background-color: gray;
+    color: aliceblue;
+}
+
+#choppinPedidoPromocoes{
+    background-color: white;
+    height: auto;
+    width: auto;
+    display: block;
+    margin-top: 5%;
+}
+.choppinPedidoPromocoesItens{
+    height: auto;
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 20px 0;
+    padding: 0;
+}
+.choppinPedidoPromocoesItem{
+    display: block;
+    margin: auto 0;
+    justify-content:left;
+}
+.choppinPedidoPromocoesItemVal{
+    text-align: center;
+    width: 10vw;
+    padding: auto;
+    background-color: rgb(219, 222, 223);
+}
+.choppinPedidoPromocoesItem img{
+    width: 2.0vw;
+    margin: 0 5px;
+}
+.choppinPedidoPromocoesItemVal h4{
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 1.5vw;
+    margin: auto 0;
+    color: blue;
+}
+.choppinPedidoPromocoesItem h5{
+    display: flex;
+    justify-content:space-between;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    text-align: left;
+    font-size: 1.7vw;
+    color:black;
+}
+.choppinPedidoPromocoesItemNone h5{
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    text-align: left;
+    font-size: 1.7vw;
+    color:white;
+}
+.choppinPedidoPromocoesItemVal h6{
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    text-align: center;
+    font-size: 1.5vw;
+    color:black;
+}
+.choppinPedidoItemShow{
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+    margin-top: 5px;
+}
+
+/* Choppin Perfil Features */
+
+.choppinCorpo form h3{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: blue;
+}
+
